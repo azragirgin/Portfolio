@@ -1,0 +1,281 @@
+/* General Styles */
+body {
+  font-family: "Roboto", sans-serif; /* Use a modern font */
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9; /* Light gray background */
+  color: #333; /* Dark gray text for readability */
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(
+    135deg,
+    #ff7eb3,
+    #ff758c
+  ); /* Gradient background */
+  color: #fff; /* White text */
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 4px solid #ff5580;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.8em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+header p {
+  margin: 10px 0 0;
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+/* Navigation */
+nav {
+  background: #fff; /* White navigation bar */
+  border-bottom: 2px solid #ff5580;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #ff5580; /* Accent pink links */
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #333; /* Dark gray on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Section Styles */
+section {
+  margin: 40px 0;
+  padding: 30px;
+  background: #fff; /* White section background */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-left: 6px solid #ff5580; /* Accent border */
+}
+
+section h2 {
+  text-align: center;
+  color: #ff5580; /* Pink headings */
+  margin-bottom: 20px;
+  font-size: 2.4em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Project Styles */
+.project {
+  margin-bottom: 30px;
+}
+
+.project h3 {
+  color: #333; /* Dark gray titles */
+  margin-bottom: 8px;
+  font-size: 1.6em;
+}
+
+.project p {
+  margin: 0;
+  color: #666; /* Medium gray for descriptions */
+}
+
+.project a {
+  color: #ff5580; /* Pink links */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.project a:hover {
+  color: #333; /* Dark gray on hover */
+}
+
+.project .game-project-image {
+  max-width: 30%; /* Adjusted size */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin: 15px 0;
+}
+
+.project img.project-image {
+  max-width: 70%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin: 15px 0;
+}
+
+/* Contact Section */
+#contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contact ul li {
+  margin-bottom: 10px;
+}
+
+#contact ul li a {
+  color: #ff5580; /* Pink links */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#contact ul li a:hover {
+  color: #333; /* Dark gray on hover */
+  transform: translateX(5px); /* Slide effect */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: #ff7eb3; /* Lighter gradient */
+  color: #fff; /* White text */
+  border-top: 4px solid #ff5580;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+/* Button Styles */
+button {
+  background: #ff5580; /* Vibrant pink */
+  color: #fff; /* White text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Contact Section */
+#contact {
+  text-align: center;
+  background: #f9f9f9; /* Light background */
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-left: 6px solid #ff5580; /* Accent border */
+}
+
+#contact h2 {
+  color: #ff5580; /* Pink heading */
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+#contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#contact ul li {
+  margin: 15px 0;
+}
+
+/* Contact Section */
+#contact {
+  text-align: center;
+  background: #f9f9f9; /* Light background */
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-left: 6px solid #ff5580; /* Accent border */
+}
+
+#contact h2 {
+  color: #ff5580; /* Pink heading */
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+#contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center the items horizontally */
+  gap: 20px; /* Add spacing between the links */
+}
+
+#contact ul li {
+  margin: 0; /* Remove unnecessary margin */
+}
+
+#contact ul li a {
+  color: #333; /* Dark text */
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: flex; /* Ensure icon and text align properly */
+  align-items: center; /* Vertically center icon and text */
+}
+
+#contact ul li a:hover {
+  color: #ff5580; /* Pink on hover */
+  transform: scale(1.1); /* Slight zoom */
+}
+
+#contact ul li a i {
+  margin-right: 8px; /* Space between icon and text */
+  color: #ff5580; /* Icon color */
+  font-size: 1.4em;
+}
+
+button:hover {
+  background: #333; /* Dark gray on hover */
+  transform: scale(1.05); /* Slight zoom */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .project img {
+    max-width: 100%; /* Make images responsive */
+  }
+}
