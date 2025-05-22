@@ -5,18 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
       <div class="container">
         <h1>Welcome to My Portfolio</h1>
-        <p>Showcasing Projects from year 1 & 2</p>
+        <p>Showcasing Projects from my bachelors degree</p>
       </div>
     </header>
 
     <nav>
       <ul>
         <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -27,10 +32,23 @@
         <h2>About Me</h2>
         <p>
           Hi! My name is Azra. I'm an ambitious developer particularly
-          interested in Machine Learning & AI. I enjoy working on innovative
+          interested in Data Science & AI. I enjoy working on innovative
           projects to solve real world problems and create an impact with
-          technology. This portfolio page showcases my favorite work from Year 1
-          & 2.
+          technology. This portfolio page showcases my favorite work from my
+          bachelors degree.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2>Technical Skills</h2>
+        <p>
+          <strong>Programming Languages:</strong> Java, JavaScript, Python, SQL
+        </p>
+        <p>
+          <strong>Frameworks & Libraries:</strong> TensorFlow, PyTorch, Keras,
+          NumPy, Pandas, scikit-learn, OpenCV, React.js
         </p>
       </div>
     </section>
@@ -38,6 +56,7 @@
     <section id="projects">
       <div class="container">
         <h2>Projects</h2>
+
         <div class="project">
           <h3>Year 1, First Game Project</h3>
           <img
@@ -45,7 +64,6 @@
             alt="Game Project Screenshot"
             style="width: 800px !important; height: auto !important"
           />
-
           <p>
             My first hands-on experience with coding resulted in this exciting
             2D game. Built with JavaScript, HTML, and P5 libraries, it features
@@ -58,6 +76,7 @@
             <li>Understood basic game logic implementation.</li>
           </ul>
         </div>
+
         <div class="project">
           <h3>Year 1, 3D Graphics Project</h3>
           <img
@@ -73,9 +92,10 @@
           <ul>
             <li>Explored geometry and 3D transformations in programming.</li>
             <li>Understood the basics of lighting and rendering effects.</li>
-            <li>Learned Creating Vectors, magnitudes and normalising.</li>
+            <li>Learned creating vectors, magnitudes, and normalizing.</li>
           </ul>
         </div>
+
         <div class="project">
           <h3>Year 1, Drawing Application</h3>
           <img
@@ -90,10 +110,11 @@
           </p>
           <ul>
             <li>Learned DOM manipulation and interactive UI design.</li>
-            <li>Implemented responsive various layouts using HTML and CSS.</li>
+            <li>Implemented responsive layouts using HTML and CSS.</li>
             <li>Gained understanding of canvas-based drawing.</li>
           </ul>
         </div>
+
         <div class="project">
           <h3>Year 2, Java Hangman Game</h3>
           <img
@@ -102,22 +123,19 @@
             class="project-image"
           />
           <p>
-            This is a console-based hangman game implemented in Java, this
-            project contirbuted for my understanding of object-oriented
-            programming principles. The game generates random words for each
-            session and provides a user-friendly interface for guessing within
-            limited attempts or else the user fails to win.
+            This is a console-based hangman game implemented in Java. This
+            project contributed to my understanding of object-oriented
+            programming principles.
           </p>
           <ul>
             <li>Applied object-oriented programming concepts like classes.</li>
-            <li>
-              Worked with file handling to store and retrieve words lists.
-            </li>
+            <li>Worked with file handling to store and retrieve word lists.</li>
             <li>
               Practiced creating user-friendly console applications with Java.
             </li>
           </ul>
         </div>
+
         <div class="project">
           <h3>Year 2, Forum Application</h3>
           <img
@@ -139,6 +157,7 @@
             </li>
           </ul>
         </div>
+
         <div class="project">
           <h3>Year 2, Study Pals Web Application</h3>
           <img
@@ -156,26 +175,66 @@
             </li>
             <li>Integrated front-end and back-end.</li>
             <li>
-              Developed team-work skills and working on tight deadlines within
-              the team.
+              Developed teamwork skills and worked on tight deadlines within the
+              team.
             </li>
           </ul>
         </div>
-        <section id="contact">
-          <h2>Contact Me</h2>
+
+        <div class="project">
+          <h3>Final Year Project: AI-Based Skin Cancer Detection Tool</h3>
+          <img
+            src="images/Skin Cancer Classifier Screenshot.png"
+            alt="Skin Cancer Classifier Screenshot"
+            style="max-width: 600px; width: 100%; height: auto"
+          />
+          <p>
+            This project uses a Convolutional Neural Network (MobileNetV2) to
+            classify skin lesions as benign or malignant. It features a
+            user-friendly Streamlit interface and Grad-CAM visual explanations
+            to improve model transparency and interpretability.
+          </p>
           <ul>
             <li>
-              <a href="https://www.linkedin.com/in/azragirgin" target="_blank">
-                <i class="fab fa-linkedin"></i> LinkedIn
-              </a>
+              Used transfer learning with MobileNetV2 on the ISIC dataset.
             </li>
             <li>
-              <a href="https://github.com/azragirgin" target="_blank">
-                <i class="fab fa-github"></i> GitHub
-              </a>
+              Implemented Grad-CAM for heatmap visual explanations of
+              predictions.
             </li>
+            <li>Developed a fully interactive web app using Streamlit.</li>
+            <li>
+              Focused on model training, data augmentation, and class imbalance
+              handling with focal loss.
+            </li>
+            <li>The model has 80% accuracy rate for benign lesions.</li>
           </ul>
-        </section>
+          <a
+            href="https://github.com/azragirgin/skin-cancer-classifier"
+            target="_blank"
+          >
+            View on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section (moved outside of projects) -->
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/azragirgin" target="_blank">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/azragirgin" target="_blank">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
   </body>

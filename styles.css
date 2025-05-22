@@ -1,11 +1,11 @@
 /* General Styles */
 body {
-  font-family: "Roboto", sans-serif; /* Use a modern font */
-  line-height: 1.8;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  line-height: 1.7;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9; /* Light gray background */
-  color: #333; /* Dark gray text for readability */
+  background-color: #f4f6f8;
+  color: #2c3e50;
 }
 
 .container {
@@ -15,47 +15,42 @@ body {
   padding: 20px;
 }
 
-/* Header Styles */
+/* Header */
 header {
-  background: linear-gradient(
-    135deg,
-    #ff7eb3,
-    #ff758c
-  ); /* Gradient background */
-  color: #fff; /* White text */
-  padding: 20px 0;
+  background: linear-gradient(135deg, #2f80ed, #56ccf2);
+  color: #fff;
+  padding: 30px 0;
   text-align: center;
-  border-bottom: 4px solid #ff5580;
+  border-bottom: 4px solid #1b6dc1;
 }
 
 header h1 {
   margin: 0;
   font-size: 2.8em;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: bold;
+  letter-spacing: 2px;
+  font-weight: 600;
 }
 
 header p {
-  margin: 10px 0 0;
+  margin-top: 10px;
   font-size: 1.2em;
   font-style: italic;
 }
 
 /* Navigation */
 nav {
-  background: #fff; /* White navigation bar */
-  border-bottom: 2px solid #ff5580;
+  background: #fff;
+  border-bottom: 2px solid #1b6dc1;
   padding: 10px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 nav ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
@@ -63,219 +58,178 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #ff5580; /* Accent pink links */
+  color: #2f80ed;
   text-decoration: none;
-  font-size: 1.1em;
   font-weight: 500;
-  transition: color 0.3s ease, transform 0.3s ease;
+  font-size: 1.1em;
+  transition: 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #333; /* Dark gray on hover */
-  transform: scale(1.1); /* Slight zoom effect */
+  color: #1b6dc1;
+  transform: scale(1.05);
 }
 
-/* Section Styles */
+/* Section Layout */
 section {
   margin: 40px 0;
   padding: 30px;
-  background: #fff; /* White section background */
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  border-left: 6px solid #ff5580; /* Accent border */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  border-left: 6px solid #2f80ed;
 }
 
 section h2 {
   text-align: center;
-  color: #ff5580; /* Pink headings */
+  font-size: 2.2em;
   margin-bottom: 20px;
-  font-size: 2.4em;
+  color: #2f80ed;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
-/* Project Styles */
+/* Project Cards */
 .project {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .project h3 {
-  color: #333; /* Dark gray titles */
-  margin-bottom: 8px;
+  color: #2c3e50;
+  margin-bottom: 10px;
   font-size: 1.6em;
 }
 
 .project p {
-  margin: 0;
-  color: #666; /* Medium gray for descriptions */
+  color: #555;
 }
 
 .project a {
-  color: #ff5580; /* Pink links */
-  text-decoration: none;
+  color: #2f80ed;
   font-weight: bold;
-  transition: color 0.3s ease;
+  text-decoration: none;
 }
 
 .project a:hover {
-  color: #333; /* Dark gray on hover */
+  color: #1b6dc1;
 }
 
-.project .game-project-image {
-  max-width: 30%; /* Adjusted size */
+.project img {
+  max-width: 100%;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
 }
 
-.project img.project-image {
-  max-width: 70%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  margin: 15px 0;
+/* Skills Section */
+#skills {
+  background: #eef4fb;
+  border-left: 6px solid #1b6dc1;
 }
 
-/* Contact Section */
+#skills h2 {
+  color: #1b6dc1;
+}
+
+#skills p {
+  font-size: 1.1em;
+  margin: 10px 0;
+  color: #333;
+}
+
+/* Contact */
+#contact {
+  text-align: center;
+  background: #fff;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  border-left: 6px solid #2f80ed;
+}
+
+#contact h2 {
+  color: #2f80ed;
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
 #contact ul {
   list-style: none;
   padding: 0;
-}
-
-#contact ul li {
-  margin-bottom: 10px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
 #contact ul li a {
-  color: #ff5580; /* Pink links */
+  color: #2c3e50;
   text-decoration: none;
-  font-weight: bold;
+  font-size: 1.2em;
+  font-weight: 600;
   transition: color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
 }
 
 #contact ul li a:hover {
-  color: #333; /* Dark gray on hover */
-  transform: translateX(5px); /* Slide effect */
+  color: #2f80ed;
+  transform: scale(1.05);
+}
+
+#contact ul li a i {
+  margin-right: 8px;
+  color: #2f80ed;
+  font-size: 1.4em;
+}
+
+/* Buttons */
+button {
+  background: #2f80ed;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #1b6dc1;
+  transform: scale(1.05);
 }
 
 /* Footer */
 footer {
   text-align: center;
+  background: #2f80ed;
+  color: #fff;
   padding: 20px 0;
-  background: #ff7eb3; /* Lighter gradient */
-  color: #fff; /* White text */
-  border-top: 4px solid #ff5580;
-}
-
-footer p {
-  margin: 0;
   font-size: 0.9em;
+  margin-top: 40px;
 }
 
-/* Button Styles */
-button {
-  background: #ff5580; /* Vibrant pink */
-  color: #fff; /* White text */
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1em;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.3s ease;
-}
-
-/* Contact Section */
-#contact {
-  text-align: center;
-  background: #f9f9f9; /* Light background */
-  padding: 40px 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  border-left: 6px solid #ff5580; /* Accent border */
-}
-
-#contact h2 {
-  color: #ff5580; /* Pink heading */
-  font-size: 2.2em;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
-#contact ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#contact ul li {
-  margin: 15px 0;
-}
-
-/* Contact Section */
-#contact {
-  text-align: center;
-  background: #f9f9f9; /* Light background */
-  padding: 40px 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  border-left: 6px solid #ff5580; /* Accent border */
-}
-
-#contact h2 {
-  color: #ff5580; /* Pink heading */
-  font-size: 2.2em;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
-#contact ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex; /* Use flexbox for centering */
-  justify-content: center; /* Center the items horizontally */
-  gap: 20px; /* Add spacing between the links */
-}
-
-#contact ul li {
-  margin: 0; /* Remove unnecessary margin */
-}
-
-#contact ul li a {
-  color: #333; /* Dark text */
-  text-decoration: none;
-  font-size: 1.2em;
-  font-weight: bold;
-  transition: color 0.3s ease, transform 0.3s ease;
-  display: flex; /* Ensure icon and text align properly */
-  align-items: center; /* Vertically center icon and text */
-}
-
-#contact ul li a:hover {
-  color: #ff5580; /* Pink on hover */
-  transform: scale(1.1); /* Slight zoom */
-}
-
-#contact ul li a i {
-  margin-right: 8px; /* Space between icon and text */
-  color: #ff5580; /* Icon color */
-  font-size: 1.4em;
-}
-
-button:hover {
-  background: #333; /* Dark gray on hover */
-  transform: scale(1.05); /* Slight zoom */
-}
-
-/* Media Queries for Responsiveness */
+/* Responsive */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
+    gap: 10px;
+  }
+
+  section {
+    padding: 20px;
   }
 
   .project img {
-    max-width: 100%; /* Make images responsive */
+    max-width: 100%;
+  }
+
+  #contact ul {
+    flex-direction: column;
+    gap: 15px;
   }
 }
